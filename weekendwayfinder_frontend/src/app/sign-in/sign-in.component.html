@@ -1,0 +1,23 @@
+<div class="sign-in-bg">
+  <div class="sign-in-card">
+    <h2>Welcome Back</h2>
+    <form [formGroup]="signInForm" (ngSubmit)="submit()">
+      <label>Email</label>
+      <input type="email" formControlName="email" placeholder="Enter your email" [class.invalid]="submitted && signInForm.controls['email'].errors" />
+      <div *ngIf="submitted && signInForm.controls['email'].errors" class="error-msg">
+        <span *ngIf="signInForm.controls['email'].errors?.['required']">Email is required.</span>
+        <span *ngIf="signInForm.controls['email'].errors?.['email']">Invalid email format.</span>
+      </div>
+
+      <label>Password</label>
+      <input type="password" formControlName="password" placeholder="Enter your password" [class.invalid]="submitted && signInForm.controls['password'].errors" />
+      <div *ngIf="submitted && signInForm.controls['password'].errors" class="error-msg">
+        <span *ngIf="signInForm.controls['password'].errors?.['required']">Password is required.</span>
+        <span *ngIf="signInForm.controls['password'].errors?.['minlength']">Min 6 characters.</span>
+      </div>
+
+      <button type="submit" [disabled]="loading">{{ loading ? 'Signing In...' : 'Sign In' }}</button>
+      <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+    </form>
+  </div>
+</div>

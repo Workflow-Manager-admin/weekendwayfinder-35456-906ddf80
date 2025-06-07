@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/weekendwayfinder-35456-906ddf80/weekendwayfinder_frontend"
+}

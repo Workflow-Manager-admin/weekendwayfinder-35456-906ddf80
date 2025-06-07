@@ -1,0 +1,60 @@
+/* Global styles for WeekendWayfinder */
+:root {
+  --color-primary: #2D5F5D;
+  --color-secondary: #F7C873;
+  --color-accent: #F25C54;
+  --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --radius-card: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #f7f7f7;
+  font-family: var(--font-main);
+  color: var(--color-primary);
+}
+
+.app-main-content {
+  min-height: 80vh;
+}
+
+/* Scrollbar styling for modern look */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #ececec;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 8px;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.18s;
+}
+a:hover { color: var(--color-accent); }
+
+button {
+  font-family: var(--font-main);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+@media (max-width: 690px) {
+  .app-main-content {
+    min-height: 72vh;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .app-main-content {
+    padding-top: 0.5rem;
+    margin: 0;
+  }
+}

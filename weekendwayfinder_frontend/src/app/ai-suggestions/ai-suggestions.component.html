@@ -1,0 +1,23 @@
+<div class="suggestions-bg">
+  <div class="suggestions-header">
+    <h2>AI Trip Suggestions</h2>
+    <button (click)="backToPlanner()">Back to Planner</button>
+  </div>
+  <div *ngIf="suggestions.length === 0" class="no-suggestions">No trips match your preferences.</div>
+  <div class="cards-row">
+    <div class="suggestion-card" *ngFor="let suggestion of suggestions">
+      <div class="img-wrap">
+        <img [src]="suggestion.image" alt="Trip image" />
+      </div>
+      <div class="card-content">
+        <h3>{{ suggestion.title }}</h3>
+        <div class="label mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggestion.mood }}</div>
+        <p>{{ suggestion.description }}</p>
+        <div class="trip-details">
+          <span>Distance: {{ suggestion.distance }}km</span>
+          <span>Budget: ${{ suggestion.price }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

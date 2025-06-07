@@ -1,0 +1,1839 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.866 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.237 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:7:12:
+      7 │       <div *ngIf="submitted && signInForm.controls.email.errors" cl...
+        ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:8:15:
+      8 │         <span *ngIf="signInForm.controls.email.errors['required']">...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:9:15:
+      9 │         <span *ngIf="signInForm.controls.email.errors['email']">Inv...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:14:12:
+      14 │       <div *ngIf="submitted && signInForm.controls.password.errors...
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:15:15:
+      15 │         <span *ngIf="signInForm.controls.password.errors['required...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:16:15:
+      16 │         <span *ngIf="signInForm.controls.password.errors['minlengt...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:20:12:
+      20 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:6:131:
+      6 │ ... [class.invalid]="submitted && signInForm.controls.email.errors" />
+        ╵                                                       ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:13:140:
+      13 │ ...ass.invalid]="submitted && signInForm.controls.password.errors" />
+         ╵                                                   ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.565 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:7:12:
+      7 │       <div *ngIf="submitted && signInForm.controls.email.errors" cl...
+        ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:8:15:
+      8 │         <span *ngIf="signInForm.controls.email.errors['required']">...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:9:15:
+      9 │         <span *ngIf="signInForm.controls.email.errors['email']">Inv...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:14:12:
+      14 │       <div *ngIf="submitted && signInForm.controls.password.errors...
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:15:15:
+      15 │         <span *ngIf="signInForm.controls.password.errors['required...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:16:15:
+      16 │         <span *ngIf="signInForm.controls.password.errors['minlengt...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:20:12:
+      20 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:6:131:
+      6 │ ... [class.invalid]="submitted && signInForm.controls.email.errors" />
+        ╵                                                       ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:13:140:
+      13 │ ...ass.invalid]="submitted && signInForm.controls.password.errors" />
+         ╵                                                   ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.010 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:7:12:
+      7 │       <div *ngIf="submitted && signInForm.controls.email.errors" cl...
+        ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:8:15:
+      8 │         <span *ngIf="signInForm.controls.email.errors['required']">...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:9:15:
+      9 │         <span *ngIf="signInForm.controls.email.errors['email']">Inv...
+        ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:14:12:
+      14 │       <div *ngIf="submitted && signInForm.controls.password.errors...
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:15:15:
+      15 │         <span *ngIf="signInForm.controls.password.errors['required...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:16:15:
+      16 │         <span *ngIf="signInForm.controls.password.errors['minlengt...
+         ╵                ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:20:12:
+      20 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:6:131:
+      6 │ ... [class.invalid]="submitted && signInForm.controls.email.errors" />
+        ╵                                                       ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:13:140:
+      13 │ ...ass.invalid]="submitted && signInForm.controls.password.errors" />
+         ╵                                                   ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:9:15:
+      9 │   templateUrl: './sign-in.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.507 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:6:131:
+      6 │ ... [class.invalid]="submitted && signInForm.controls.email.errors" />
+        ╵                                                       ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:7:51:
+      7 │ ...="submitted && signInForm.controls.email.errors" class="error-msg">
+        ╵                                       ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:8:41:
+      8 │ ...an *ngIf="signInForm.controls.email.errors['required']">Email is...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'email' comes from an index signature, so it must be accessed with ['email']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:9:41:
+      9 │ ...an *ngIf="signInForm.controls.email.errors['email']">Invalid ema...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:13:140:
+      13 │ ...ass.invalid]="submitted && signInForm.controls.password.errors" />
+         ╵                                                   ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:14:51:
+      14 │ ...bmitted && signInForm.controls.password.errors" class="error-msg">
+         ╵                                   ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:15:41:
+      15 │ ... *ngIf="signInForm.controls.password.errors['required']">Passwo...
+         ╵                                ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1: Property 'password' comes from an index signature, so it must be accessed with ['password']. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.html:16:41:
+      16 │ ... *ngIf="signInForm.controls.password.errors['minlength']">Min 6...
+         ╵                                ~~~~~~~~
+
+  Error occurs in the template of component SignInComponent.
+
+    src/app/sign-in/sign-in.component.ts:10:15:
+      10 │   templateUrl: './sign-in.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.463 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.303 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:13:19:
+      13 │           <option *ngFor="let mood of moods" [value]="mood">{{ moo...
+         ╵                    ~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:21:12:
+      21 │       <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+         ╵             ~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:7:29:
+      7 │ ...ut type="number" [(ngModel)]="planner.distance" name="distance" ...
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:11:16:
+      11 │         <select [(ngModel)]="planner.mood" name="mood" required>
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'. [plugin angular-compiler]
+
+    src/app/trip-planner/trip-planner.component.html:18:29:
+      18 │ ...put type="number" [(ngModel)]="planner.budget" name="budget" mi...
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component TripPlannerComponent.
+
+    src/app/trip-planner/trip-planner.component.ts:7:15:
+      7 │   templateUrl: './trip-planner.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.387 seconds]
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:6:8:
+      6 │   <div *ngIf="suggestions.length === 0" class="no-suggestions">No t...
+        ╵         ~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:8:34:
+      8 │ ...<div class="suggestion-card" *ngFor="let suggestion of suggestio...
+        ╵                                  ~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8002: Can't bind to 'ngClass' since it isn't a known property of 'div'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.html:14:32:
+      14 │ ...abel mood" [ngClass]="suggestion.mood.toLowerCase()">{{ suggest...
+         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AiSuggestionsComponent.
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:16:15:
+      16 │   templateUrl: './ai-suggestions.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.483 seconds]
+
+✘ [ERROR] NG8001: 'app-navigation' is not a known element:
+1. If 'app-navigation' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-navigation' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:0:0:
+      0 │ 
+        ╵ ^
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  36.61 kB | 
+styles.css           | styles           |   1.11 kB | 
+
+                     | Initial total    | 127.92 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-WE5NVNE6.mjs   | -                |  37.10 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.503 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navigation/navigation.component.html:7:9:
+      7 │     <li *ngFor="let link of navLinks">
+        ╵          ~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/navigation/navigation.component.ts:8:15:
+      8 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+6:14:19 AM [vite] (ssr) ✨ new dependencies optimized: @angular/forms
+6:14:19 AM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  36.57 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-DQR76VUS.mjs  | -           |  37.06 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.418 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navigation/navigation.component.html:7:9:
+      7 │     <li *ngFor="let link of navLinks">
+        ╵          ~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/navigation/navigation.component.ts:8:15:
+      8 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  36.57 kB | 
+styles.css           | styles           |   1.11 kB | 
+
+                     | Initial total    | 127.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-DQR76VUS.mjs   | -                |  37.06 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.137 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navigation/navigation.component.html:7:9:
+      7 │     <li *ngFor="let link of navLinks">
+        ╵          ~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/navigation/navigation.component.ts:8:15:
+      8 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  36.53 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-OIBDVWMH.mjs  | -           |  37.02 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.339 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/navigation/navigation.component.html:7:9:
+      7 │     <li *ngFor="let link of navLinks">
+        ╵          ~~~~~
+
+  Error occurs in the template of component NavigationComponent.
+
+    src/app/navigation/navigation.component.ts:8:15:
+      8 │   templateUrl: './navigation.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  36.66 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-XQJEJUOG.mjs  | -           |  37.16 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.380 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  36.67 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-SXQM55HF.mjs  | -           |  37.17 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.413 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  36.71 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-QGNYFZKA.mjs  | -           |  37.21 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.275 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  36.71 kB | 
+styles.css           | styles           |   1.11 kB | 
+
+                     | Initial total    | 128.02 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-QGNYFZKA.mjs   | -                |  37.21 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.133 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  36.71 kB | 
+styles.css           | styles           |   1.11 kB | 
+
+                     | Initial total    | 128.02 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-QGNYFZKA.mjs   | -                |  37.21 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.151 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.281 seconds]
+
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'AiSuggestionsComponent'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:68:9:
+      68 │     this.router.navigate(['/trip-planner']);
+         ╵          ~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.253 seconds]
+
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'AiSuggestionsComponent'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:68:9:
+      68 │     this.router.navigate(['/trip-planner']);
+         ╵          ~~~~~~
+
+
+✘ [ERROR] TS2552: Cannot find name 'submit'. Did you mean 'onsubmit'? [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:49:2:
+      49 │   submit(): void {
+         ╵   ~~~~~~
+
+  'onsubmit' is declared here.
+
+    node_modules/typescript/lib/lib.dom.d.ts:28563:12:
+      28563 │ declare var onsubmit: ((this: Window, ev: SubmitEvent) => any) ...
+            ╵             ~~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:49:10:
+      49 │   submit(): void {
+         ╵           ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:50:8:
+      50 │     this.submitted = true;
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:50:25:
+      50 │     this.submitted = true;
+         ╵                          ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:51:8:
+      51 │     this.errorMsg = '';
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:51:22:
+      51 │     this.errorMsg = '';
+         ╵                       ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:12:
+      52 │     if (this.signInForm.invalid) {
+         ╵             ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:31:
+      52 │     if (this.signInForm.invalid) {
+         ╵                                ^
+
+
+✘ [ERROR] TS1136: Property assignment expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:33:
+      52 │     if (this.signInForm.invalid) {
+         ╵                                  ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:56:32:
+      56 │     const { email, password } = this.signInForm.value;
+         ╵                                 ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:57:4:
+      57 │     this.loading = true;
+         ╵     ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:60:6:
+      60 │       this.loading = false;
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:62:8:
+      62 │         this.router.navigate(['/home']);
+         ╵         ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:64:8:
+      64 │         this.errorMsg = 'Invalid email or password. Hint: test@way...
+         ╵         ~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:67:2:
+      67 │   }
+         ╵   ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:68:0:
+      68 │ }
+         ╵ ^
+
+
+✘ [ERROR] Unexpected "."
+
+    src/app/sign-in/sign-in.component.ts:136:10:
+      136 │     this: .submitted = true,
+          ╵           ^
+
+
+✘ [ERROR] Unexpected "."
+
+    src/app/sign-in/sign-in.component.ts:136:10:
+      136 │     this: .submitted = true,
+          ╵           ^
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.306 seconds]
+
+✘ [ERROR] TS2339: Property 'router' does not exist on type 'AiSuggestionsComponent'. [plugin angular-compiler]
+
+    src/app/ai-suggestions/ai-suggestions.component.ts:68:9:
+      68 │     this.router.navigate(['/trip-planner']);
+         ╵          ~~~~~~
+
+
+✘ [ERROR] TS2552: Cannot find name 'submit'. Did you mean 'onsubmit'? [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:49:2:
+      49 │   submit(): void {
+         ╵   ~~~~~~
+
+  'onsubmit' is declared here.
+
+    node_modules/typescript/lib/lib.dom.d.ts:28563:12:
+      28563 │ declare var onsubmit: ((this: Window, ev: SubmitEvent) => any) ...
+            ╵             ~~~~~~~~
+
+
+✘ [ERROR] TS1005: ';' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:49:10:
+      49 │   submit(): void {
+         ╵           ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:50:8:
+      50 │     this.submitted = true;
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:50:25:
+      50 │     this.submitted = true;
+         ╵                          ^
+
+
+✘ [ERROR] TS1005: ':' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:51:8:
+      51 │     this.errorMsg = '';
+         ╵         ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:51:22:
+      51 │     this.errorMsg = '';
+         ╵                       ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:12:
+      52 │     if (this.signInForm.invalid) {
+         ╵             ^
+
+
+✘ [ERROR] TS1005: ',' expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:31:
+      52 │     if (this.signInForm.invalid) {
+         ╵                                ^
+
+
+✘ [ERROR] TS1136: Property assignment expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:52:33:
+      52 │     if (this.signInForm.invalid) {
+         ╵                                  ^
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:56:32:
+      56 │     const { email, password } = this.signInForm.value;
+         ╵                                 ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:57:4:
+      57 │     this.loading = true;
+         ╵     ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:60:6:
+      60 │       this.loading = false;
+         ╵       ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:62:8:
+      62 │         this.router.navigate(['/home']);
+         ╵         ~~~~
+
+
+✘ [ERROR] TS2532: Object is possibly 'undefined'. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:64:8:
+      64 │         this.errorMsg = 'Invalid email or password. Hint: test@way...
+         ╵         ~~~~
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:67:2:
+      67 │   }
+         ╵   ^
+
+
+✘ [ERROR] TS1128: Declaration or statement expected. [plugin angular-compiler]
+
+    src/app/sign-in/sign-in.component.ts:68:0:
+      68 │ }
+         ╵ ^
+
+
+✘ [ERROR] Unexpected "."
+
+    src/app/sign-in/sign-in.component.ts:136:10:
+      136 │     this: .submitted = true,
+          ╵           ^
+
+
+✘ [ERROR] Unexpected "."
+
+    src/app/sign-in/sign-in.component.ts:136:10:
+      136 │     this: .submitted = true,
+          ╵           ^
+
+
+❯ Changes detected. Rebuilding...
+fatal error: all goroutines are asleep - deadlock!
+
+goroutine 1 [chan receive]:
+github.com/evanw/esbuild/internal/helpers.(*ThreadSafeWaitGroup).Wait(...)
+	github.com/evanw/esbuild/internal/helpers/waitgroup.go:36
+main.runService.func2()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:114 +0x51
+main.runService(0x1)
+	github.com/evanw/esbuild/cmd/esbuild/service.go:160 +0x50c
+main.main()
+	github.com/evanw/esbuild/cmd/esbuild/main.go:241 +0x9d9
+
+goroutine 7 [chan receive]:
+main.runService.func1()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:98 +0x45
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:97 +0x1db
+
+goroutine 8 [chan receive]:
+main.(*serviceType).sendRequest(0xc000168300, {0x986960, 0xc00b749020})
+	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
+main.runService.func3()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:125 +0x3e
+created by main.runService in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:122 +0x30d
+
+goroutine 12681 [chan receive]:
+main.(*serviceType).sendRequest(0xc000168300, {0x986960, 0xc00ba13d70})
+	github.com/evanw/esbuild/cmd/esbuild/service.go:192 +0x12b
+main.(*serviceType).handleBuildRequest.func2.2(0xc0047fc780)
+	github.com/evanw/esbuild/cmd/esbuild/service.go:729 +0x27a
+github.com/evanw/esbuild/pkg/api.rebuildImpl({0xc00007e960, {0xc0000109f0, 0x1, 0x1}, {0x0, 0x0, 0x0}, {0x0, 0x1, 0x0, ...}, ...}, ...)
+	github.com/evanw/esbuild/pkg/api/api_impl.go:1608 +0xf1f
+github.com/evanw/esbuild/pkg/api.(*internalContext).rebuild(_)
+	github.com/evanw/esbuild/pkg/api/api_impl.go:998 +0x29c
+github.com/evanw/esbuild/pkg/api.(*internalContext).Rebuild(0xc000159908?)
+	github.com/evanw/esbuild/pkg/api/api_impl.go:1059 +0x3d
+main.(*serviceType).handleIncomingPacket.func5()
+	github.com/evanw/esbuild/cmd/esbuild/service.go:293 +0xba
+created by main.(*serviceType).handleIncomingPacket in goroutine 1
+	github.com/evanw/esbuild/cmd/esbuild/service.go:290 +0x11d0

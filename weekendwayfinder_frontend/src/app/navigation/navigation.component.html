@@ -1,0 +1,11 @@
+<nav class="main-nav">
+  <div class="nav-brand">
+    <span class="dot"></span>
+    <span class="brand-name">WeekendWayfinder</span>
+  </div>
+  <ul class="nav-links">
+    <li *ngFor="let link of navLinks">
+      <a routerLink="{{link.route}}" routerLinkActive="active">{{ link.label }}</a>
+    </li>
+  </ul>
+</nav>

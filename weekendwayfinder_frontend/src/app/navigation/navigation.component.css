@@ -1,0 +1,54 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5vw;
+  position: sticky;
+  top: 0; z-index: 20;
+  background: #fff;
+  box-shadow: 0 2px 7px 0 #2d5f5d1f;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.32rem;
+  font-weight: bold;
+  color: #2D5F5D;
+}
+.nav-brand .dot {
+  display: inline-block;
+  width: 1.08em;
+  height: 1.08em;
+  margin-right: 0.38em;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #2D5F5D 65%, #F7C873 100%);
+  border: 2.5px solid #F25C54;
+}
+.brand-name {
+  letter-spacing: 0.02em;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {}
+.nav-links a {
+  text-decoration: none;
+  color: #2D5F5D;
+  font-weight: 600;
+  font-size: 1.08rem;
+  padding: 0.31em 0.7em;
+  border-radius: 1.4em;
+  transition: background 0.14s, color 0.14s;
+}
+.nav-links a.active, .nav-links a:hover {
+  background: linear-gradient(90deg, #f25c54 0%, #f7c873 100%);
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .main-nav { flex-direction: column; gap: 0.7em; padding: 0.7rem 4vw;}
+  .nav-links { gap: 1.2em;}
+}

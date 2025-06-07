@@ -1,0 +1,24 @@
+<div class="planner-bg">
+  <div class="planner-card">
+    <h2>Trip Preferences</h2>
+    <form (ngSubmit)="submit()">
+      <div class="form-card">
+        <label>Travel Distance (km)</label>
+        <input type="number" [(ngModel)]="planner.distance" name="distance" min="10" max="500" required placeholder="Ex: 120" />
+      </div>
+      <div class="form-card">
+        <label>Mood</label>
+        <select [(ngModel)]="planner.mood" name="mood" required>
+          <option value="" disabled selected>Select mood...</option>
+          <option *ngFor="let mood of moods" [value]="mood">{{ mood }}</option>
+        </select>
+      </div>
+      <div class="form-card">
+        <label>Budget ($)</label>
+        <input type="number" [(ngModel)]="planner.budget" name="budget" min="10" max="2000" required placeholder="Ex: 300" />
+      </div>
+      <button type="submit">See AI Suggestions</button>
+      <div *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</div>
+    </form>
+  </div>
+</div>
